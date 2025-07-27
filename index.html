@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasAdi | Exploit. Build. Repeat.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero-section" id="hero">
+        <div class="hero-content">
+            <h1>MasAdi<span class="cursor">_</span></h1>
+            <p class="tagline"></p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">Lihat Proyek</a>
+                <a href="#terminal-section" class="btn secondary-btn">Buka Terminal</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content-wrapper">
+        <section class="section" id="projects">
+            <h2><span class="section-indicator">></span> Proyek</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="python">Python Tools</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="recon">Recon / Exploit Tools</button>
+            </div>
+            <div class="project-grid" id="project-grid">
+                <!-- Project cards will be injected here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <h2><span class="section-indicator">></span> Keterampilan</h2>
+            <div class="skills-grid">
+                <div class="skill-group reveal-item">
+                    <h3>Web Pentest</h3>
+                    <ul>
+                        <li class="skill-item">SQL Injection</li>
+                        <li class="skill-item">XSS</li>
+                        <li class="skill-item">RCE</li>
+                        <li class="skill-item">SSRF</li>
+                        <li class="skill-item">CSRF</li>
+                        <li class="skill-item">File Upload Vulnerabilities</li>
+                        <li class="skill-item">OWASP Top 10</li>
+                    </ul>
+                </div>
+                <div class="skill-group reveal-item">
+                    <h3>Tools Development</h3>
+                    <ul>
+                        <li class="skill-item">Python</li>
+                        <li class="skill-item">Bash Scripting</li>
+                        <li class="skill-item">Automation</li>
+                        <li class="skill-item">Scraping</li>
+                        <li class="skill-item">CLI Tools</li>
+                    </ul>
+                </div>
+                <div class="skill-group reveal-item">
+                    <h3>Frontend Dev</h3>
+                    <ul>
+                        <li class="skill-item">HTML5</li>
+                        <li class="skill-item">CSS3</li>
+                        <li class="skill-item">JavaScript (Vanilla)</li>
+                        <li class="skill-item">Responsive Design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="terminal-section">
+            <h2><span class="section-indicator">></span> Terminal</h2>
+            <div class="terminal-window reveal-item">
+                <div class="terminal-header">
+                    <span class="terminal-button red"></span>
+                    <span class="terminal-button yellow"></span>
+                    <span class="terminal-button green"></span>
+                </div>
+                <div class="terminal-output" id="terminal-output">
+                    <div class="line">Selamat datang di Terminal MasAdi. Ketik '<span class="command-highlight">help</span>' untuk daftar perintah.</div>
+                </div>
+                <div class="terminal-input-line">
+                    <span class="prompt">masadi@kali:~$</span>
+                    <input type="text" id="terminal-input" autofocus autocomplete="off" spellcheck="false">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <h2><span class="section-indicator">></span> Tentang Saya</h2>
+            <div class="about-content reveal-item">
+                <p>Seorang developer & pentester independen. Membangun alat, menembus sistem, dan selalu belajar di balik layar.</p>
+                <p>Berfokus pada keamanan siber dan pengembangan perangkat lunak yang efektif serta terpercaya.</p>
+                <p>Misteri adalah bagian dari proses, bukan penghalang.</p>
+            </div>
+        </section>
+
+        <section class="section" id="quotes">
+            <h2><span class="section-indicator">></span> Kutipan</h2>
+            <div class="quotes-carousel reveal-item" id="quotes-carousel">
+                <!-- Quotes will be injected here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2><span class="section-indicator">></span> Ping Me</h2>
+            <div class="contact-content reveal-item">
+                <p>Tertarik berkolaborasi atau sekadar ingin menyapa?</p>
+                <p class="contact-links">
+                    Kirim pesan: <a href="https://www.instagram.com/masadi.anomali/#" target="_blank" class="link-glow">instagram.com/masadi.anomali</a><br>
+                    Kunjungi GitHub: <a href="https://github.com/MasAdii" target="_blank" class="link-glow">github.com/MasAdii</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 MasAdi</p>
+    </footer>
+
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
